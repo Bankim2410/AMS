@@ -1,0 +1,69 @@
+:root{
+    --header-color: #0395f7;
+    --header-colorClose: #f7a203;
+    --table-color: aqua;
+}
+body.dark{
+    --header-color: #abc6d8;
+    --table-color: rgb(23, 87, 87);
+}
+.home{
+    transition: var(--trans-05);
+}
+
+.table-block {
+    background-color: var(--header-color);
+    width: 95%;
+    margin: 92px 0px 30px 32px;
+    border: 1px solid black;
+}
+
+.sidebar.close~.table-block {
+    background-color: var(--header-colorClose);
+    width: 5%;
+}
+.maintainWidth .home .table-block .heading{
+    font-size: 18px;
+    margin: 12px;
+    color: white;
+}
+.maintainWidth .home .table-block .table table{
+    overflow-x: scroll;
+    width: 130vw;
+}
+.maintainWidth .home .table-block .table{
+    background-color: var(--table-color);
+    overflow-x: scroll;
+}
+.maintainWidth .home .table-block .table table,
+.maintainWidth .home .table-block .table th,
+.maintainWidth .home .table-block .table td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+body.dark .maintainWidth .home .table-block .heading{
+    color: black
+}
+
+body.dark .maintainWidth .home .table-block .table table,
+body.dark .maintainWidth .home .table-block .table th,
+body.dark .maintainWidth .home .table-block .table td{
+    color: white;
+}
+
+.btn{
+    width: 70px;
+    height: 35px;
+    border-radius: 6px;
+    background: aquamarine;
+    margin: 2px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}

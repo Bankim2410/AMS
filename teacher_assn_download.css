@@ -1,0 +1,88 @@
+body{
+    transition: var(--trans-05);
+}
+h1 {
+    text-align: center;
+    margin: 95px auto 20px auto
+}
+body.dark h1{
+    color:white;
+    transition: var(--trans-05);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark form{
+    background-color: rgb(48, 44, 44);
+    transition: var(--trans-05);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+body.dark label{
+    color:white;
+    transition: var(--trans-05);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Placeholder styling */
+    color: #999;
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+    font-size: 17px;
+    font-family: 'Aptos Display';
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #b653ef;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.caution-message {
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+    font-style: italic;
+    font-family: 'calibri';
+}
+#exit {
+    background-color: red;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 25px;
+    border: none;
+}
+#exit:hover{
+    background-color: rgb(121, 18, 18);;
+}

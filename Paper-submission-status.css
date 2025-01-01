@@ -1,0 +1,58 @@
+:root{
+    --box-color: #fff;
+    --text-colors: black;
+    --paper-item: #f9f9f9;
+}
+body.dark{
+    --box-color: #635c5c;
+    --text-colors: rgb(255, 255, 255);
+    --paper-item: #352f2f;
+}
+
+.paper-list {
+    max-width: 600px;
+    margin: 125px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--box-color);
+    transition: var(--trans-05);
+}
+
+.paper-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: var(--paper-item);
+    transition: var(--trans-03);
+}
+
+.paper-item span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.paper-item .paper-code {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.paper-item .paper-name {
+    font-style: italic;
+}
+
+.status-submitted {
+    color: green;
+}
+
+.status-not-submitted {
+    color: red;
+}
+
+h2,
+h3,
+.make-white
+{
+    color: var(--text-colors);
+}

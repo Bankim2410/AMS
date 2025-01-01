@@ -1,0 +1,78 @@
+:root{
+    --sub-color: #695CFE;
+    --sub-write-color: #695CFE;
+    --form-color1: white; ;
+}
+body.dark{
+    --sub-color: #31303d;
+    --sub-write-color: white;
+    --form-color1: rgb(92, 84, 84);
+}
+
+h1 {
+    text-align: center;
+}
+
+.submission-form {
+    background-color: var(--form-color1);
+    max-width: 600px;
+    margin: 120px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: var(--trans-05);
+}
+
+.submission-form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.submission-form table,
+th,
+td {
+    border: 1px solid #ddd;
+    transition: var(--trans-03);
+}
+
+.submission-form th,
+.submission-form td {
+    padding: 10px;
+    text-align: left;
+}
+
+.submission-form th {
+    background-color: #f2f2f2;
+}
+body.dark .submission-form th{
+    background-color: rgb(70, 64, 64);
+}
+body.dark .submission-form tr{
+    background-color: rgb(53, 49, 49);
+}
+body.dark h2,
+body.dark h3,
+body.dark th,
+body.dark tr{
+    color:white
+}
+
+.submission-form input[type="file"] {
+    display: block;
+    margin-top: 5px;
+}
+
+.submission-form input[type="submit"] {
+    background-color: var(--sub-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.submission-form input[type="submit"]:hover {
+    background-color: #DE44E8;
+}

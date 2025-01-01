@@ -1,0 +1,72 @@
+:root{
+    --table-head-color: #b653ef;
+    --odd-color: #f5dede;
+    --even-color: #f9f9f9;
+}
+
+body.dark{
+    --table-head-color: #422e4d;
+    --odd-color: #bd9c9c;
+    --even-color: #d3d2d2;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content h2 {
+    color: #333;
+}
+
+.content p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Table Styles */
+.center-table {
+    margin: 90px auto;
+    /* Center table horizontally and add margin top */
+    width: 60%;
+    /* Reduce width of the table */
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #e9d8d8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+body.dark th,
+body.dark td{
+    border: 1px solid rgb(44, 23, 23);
+}
+
+th,
+td {
+    border: 1px solid #000000;
+    padding: 10px;
+    /* Adjusted padding */
+    text-align: left;
+}
+
+th {
+    background-color: var(--table-head-color);
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: var(--even-color);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--odd-color);
+}
+
+tr:hover {
+    background-color: #ad7474;
+}

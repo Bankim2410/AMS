@@ -1,0 +1,203 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+:root{
+    --background-color-primary : white;
+    --botton-color-primary : #37af65;
+    
+}
+body.dark{
+    --background-color-primary: rgb(139, 139, 139);
+    --botton-color-primary : #18522e;
+}
+
+.container {
+    background-color: var(--background-color-primary);
+    max-width: 900px;
+    height: fit-content;
+    width: 60vw;
+    border-radius: 6px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    margin: 78px 0px;
+}
+
+.container header {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    color: brown;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.container header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    background-color: #4070f4;
+    border-radius: 8px;
+}
+
+
+.container form {
+    position: relative;
+    min-height: 490px;
+    margin-top: 16px;
+    background-color: var(--background-color-primary);
+
+}
+
+.container form .details {
+    margin-top: 30px;
+}
+
+.container form .title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 6px 0;
+    color: #333;
+    font-family: verdana;
+}
+
+body.dark .container form .title {
+    color: white;
+}
+
+.container form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field {
+    display: flex;
+    width: calc(100% / 3 -15px);
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+.input-field label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #2e2e2e;
+    font-family: verdana;
+
+}
+
+body.dark .input-field label {
+    color: white;
+}
+
+.input-field input {
+    padding: 0 15px;
+    font-size: 15px;
+    outline: none;
+    color: #333;
+    border-radius: 5px;
+    border: 1 px solid black;
+    font-weight: 400;
+    height: 42px;
+    margin: 8px 0;
+    font-family: 'verdana';
+}
+
+.input-field input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+.input-field input[type="date"]:valid {
+    color: #352727;
+
+
+}
+
+
+/* select */
+
+.input-field select {
+    width: 100%;
+    padding: 0 15px;
+    font-size: 15px;
+    outline: none;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: 400;
+    height: 42px;
+    margin: 8px 0;
+    font-family: 'verdana';
+}
+
+/* Style for when the dropdown is focused */
+.input-field select:focus {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+/* Style for the arrow icon of the dropdown */
+.input-field select::-ms-expand {
+    display: none;
+}
+
+.input-field select option {
+    font-family: 'verdana';
+}
+
+/* Style for the dropdown arrow icon */
+.input-field select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 20px;
+    color: #333;
+}
+
+#dob, #dos, #subjectDropdown,#programme, #gender {
+    width: 236px;
+}
+
+button {
+    display: inline;
+    width: 150px;
+    padding: 0.75rem;
+    background: var(--botton-color-primary);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Verdana';
+    font-weight: bold;
+}
+
+button:hover {
+   background-color: #2f9757;
+}
+
+.sign {
+    margin: 2px;
+    font-size: 13pt;
+}
+
+.register {
+    margin-left: 0;
+}
+.reset {
+    margin-right: 40px
+}
+section {
+    display: flex;
+    justify-content: center;
+}
+
+
